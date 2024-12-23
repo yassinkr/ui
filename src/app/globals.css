@@ -1,0 +1,19 @@
+@tailwind base;        /* Imports Tailwind's base styles to normalize and set up default styles */
+@tailwind components;  /* Imports Tailwind's component styles to use Tailwind's pre-designed components */
+@tailwind utilities;   /* Imports Tailwind's utility classes for rapid styling */
+
+/* Define custom CSS variables for theme colors */
+:root {
+    --main-yellow: #FACC15;       /* Primary yellow color, possibly used for buttons, highlights, etc. */
+    --bg-light: #FFF9E6;          /* Light background color, used for the main page background */
+    --hover-yellow: #EAB308;      /* Darker yellow for hover states, such as buttons or links */
+    --text-dark: #333333;         /* Dark color for primary text, improving readability on light backgrounds */
+    --card-white: #FFFFFF;        /* White color for card backgrounds */
+    --card-hover: #F4F4F4;        /* Light gray for card hover background, adding a subtle effect */
+}
+
+/* Apply global styles using CSS variables */
+body {
+  background-color: var(--bg-light);  /* Sets the background color of the page to the light theme color */
+  color: var(--text-color);           /* Sets the default text color, though --text-color is undefined here */
+}
