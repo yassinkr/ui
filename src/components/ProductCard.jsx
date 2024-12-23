@@ -29,7 +29,7 @@ const ProductCard = ({ project, updateCart }) => {
         <p className="text-card-color mb-4 line-clamp-2">{project.description}</p>
         <div className="flex items-center gap-4 justify-center">
           <Link
-            href={`/projects/${project._id}`}
+            href={`/produits/${project._id}`}
             className="inline-block bg-main-yellow text-text-dark font-bold px-4 py-2 rounded-full hover:bg-hover-yellow transition-colors"
           >
             View Product

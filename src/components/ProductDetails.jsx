@@ -1,8 +1,7 @@
 import React from 'react';
 import Carousel from './Carousel'; // For displaying product images
-import RelatedProducts from './RelatedProducts'; // For showcasing related products
-
-function ProductDetails({ product, relatedProducts }) {
+ 
+function ProductDetails({ product }) {
   return (
     <div className="bg-bg-light text-text-dark">
       {/* Product Header */}
@@ -58,8 +57,7 @@ function ProductDetails({ product, relatedProducts }) {
       </section>
 
       {/* Related Products */}
-      <RelatedProducts relatedProducts={relatedProducts} />
-    </div>
+     </div>
   );
 
   // Function to handle adding the product to the cart
