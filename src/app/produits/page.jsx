@@ -81,7 +81,7 @@ const mockProducts = [
       {/* Main content area, centered with max-width */}
       <div className="max-w-6xl mx-auto">
         <Header index={3} /> {/* Header component with index prop, likely to set the active link */}
-        <ProduitsSection Produits={mockProjects} /> {/* ProjectsSection component displaying projects */}
+        <ProduitsSection Produits={mockProducts} /> {/* ProjectsSection component displaying projects */}
       </div>
 
       {/* Footer component spanning full width at the bottom */}
