@@ -11,46 +11,70 @@ import { useSelector } from 'react-redux'; // Hook to access Redux store data
 function page() {
   // Access projects data from Redux store using useSelector
  // const { projects } = useSelector((state) => state.projects);
-  const mockProjects = [
-    {
-      _id: "1",
-      name: "Modern Web Design",
-      description: "A cutting-edge web design project that leverages modern frameworks and responsive design principles.",
-      mainImage: "https://via.placeholder.com/300x300?text=Modern+Web+Design",
-    },
-    {
-      _id: "2",
-      name: "Mobile App Development",
-      description: "An innovative mobile application that enhances productivity and user engagement.",
-      mainImage: "https://via.placeholder.com/300x300?text=Mobile+App+Development",
-    },
-    {
-      _id: "3",
-      name: "AI-Driven Analytics",
-      description: "A project focused on delivering actionable insights using advanced AI algorithms.",
-      mainImage: "https://via.placeholder.com/300x300?text=AI+Driven+Analytics",
-    },
-    {
-      _id: "4",
-      name: "E-Commerce Platform",
-      description: "A robust e-commerce platform designed for seamless online shopping experiences.",
-      mainImage: "https://via.placeholder.com/300x300?text=E-Commerce+Platform",
-    },
-    {
-      _id: "5",
-      name: "Game Development",
-      description: "A thrilling game development project that combines creativity and cutting-edge technology.",
-      mainImage: "https://via.placeholder.com/300x300?text=Game+Development",
-    },
-    {
-      _id: "6",
-      name: "Sustainable Energy Solutions",
-      description: "A sustainability-focused project aimed at optimizing renewable energy usage.",
-      mainImage: "https://via.placeholder.com/300x300?text=Sustainable+Energy+Solutions",
-    },
-  ];
-  
-   
+ // Mock data for demonstration
+const mockProducts = [
+  {
+    _id: "1",
+    name: "Wireless Headphones",
+    description: "High-quality wireless headphones with noise cancellation.",
+    price: 99.99,
+    images: [
+      "/images/headphones1.jpg",
+      "/images/headphones2.jpg",
+      "/images/headphones3.jpg",
+    ],
+    details: "These wireless headphones offer superior sound quality and comfort.",
+    specifications: [
+      "Battery Life: 20 hours",
+      "Bluetooth 5.0",
+      "Weight: 250g",
+      "Color: Black",
+    ],
+    features: [
+      "Active Noise Cancellation",
+      "Wireless Charging",
+      "Built-in Microphone",
+    ],
+  },
+  {
+    _id: "2",
+    name: "Bluetooth Speaker",
+    description: "Compact Bluetooth speaker with powerful sound.",
+    price: 49.99,
+    images: [
+      "/images/speaker1.jpg",
+      "/images/speaker2.jpg",
+      "/images/speaker3.jpg",
+    ],
+    details: "Perfect for travel or home use with excellent audio quality.",
+    specifications: [
+      "Battery Life: 12 hours",
+      "Bluetooth Range: 10 meters",
+      "Weight: 500g",
+      "Color: Blue",
+    ],
+    features: ["Water Resistant", "Compact Design", "Easy Pairing"],
+  },
+  {
+    _id: "3",
+    name: "Smart Watch",
+    description: "Feature-packed smartwatch with fitness tracking.",
+    price: 199.99,
+    images: [
+      "/images/watch1.jpg",
+      "/images/watch2.jpg",
+      "/images/watch3.jpg",
+    ],
+    details: "Track your health and stay connected on the go.",
+    specifications: [
+      "Battery Life: 7 days",
+      "Water Resistance: 50m",
+      "Weight: 150g",
+      "Color: Black",
+    ],
+    features: ["Heart Rate Monitoring", "GPS Tracking", "Customizable Watch Faces"],
+  },
+];  
   
   return (
     <>
