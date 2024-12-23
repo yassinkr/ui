@@ -14,13 +14,13 @@ const ProductCard = ({ project, updateCart }) => {
 
     updateCart(existingCart);
   };
-
+  
   return (
     <div className="bg-bg-light shadow-md rounded-lg overflow-hidden hover:bg-card-hover hover:shadow-lg transition-shadow duration-300">
       <Image
         width={300}
         height={300}
-        src={project.mainImage}
+        src={project.images[0]}
         alt={project.name}
         className="w-full h-48 object-cover"
       />
